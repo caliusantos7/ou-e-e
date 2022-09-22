@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Calculadora de cansaço aprimorada do aluno SPTech.
+       
+    Digite sua distância da faculdade em (KM)<input id="ipt_dist" type="text">
+
+    <select  id="combo">
+        <option value="">Meio de Transporte</option>
+        <option value="1">ônibus</option>
+        <option value="2">Metrô </option>
+        <option value="3">Carro</option>
+        <option value="4">Bicicleta</option>
+    </select>
+
+    <button onclick="Calcular()">Calcular cansaço</button>
+</body>
+</html>
+
+<script>
+    function Calcular() {
+        var km = ipt_dist.value
+
+        if (km <= 10 && km == 1 || km == 2 || km == 3  ) {
+            alert('Tá thanks') 
+        } else if (km > 10 && km == 3) {
+            alert('um pouco cansado')
+        } else if (km == 2 || km == 3) {
+            alert('Bem cansado')
+        } 
+        else {
+            alert('É ... um pouco cansado ...') 
+        }
+    }
+</script>

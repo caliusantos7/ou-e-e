@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Parcelado ou inteiro</h1>
+
+    <select  id="combo" >
+        <option value="1">Dinheiro</option>
+        <option value="2">Cartão de Débito</option>
+        <option value="3">Cartão de Crérito</option>
+        <option value="4">Boleto</option>
+    </select>
+ 
+    <button onclick="analisar()">Analisar compra</button>
+    <div id="div_mens"></div>
+</body>
+</html>
+
+<script>
+    function analisar() {
+           var combobox = combo.value
+
+        if (combobox == 1 || combobox == 2) {
+            div_mens.innerHTML = `Você terá que pagar a vista`
+        } else {
+            div_mens.innerHTML = `Pagamento terá que ser parcelado`
+        }
+
+    }
+</script>
